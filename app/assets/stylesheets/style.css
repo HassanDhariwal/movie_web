@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: rgb(45,45, 45);
+	font-family: 'Poppins', sans-serif;
+	display: flex; /*left to right show ky liya */
+	align-items: center; /* box ko complete sides xy gap dany ky liya */
+	justify-content: center; /* box ko center ky liya 	*/
+	
+
+
+}
+header {
+	position: relative;
+	width: 80%;
+	height: 90%;
+	border: 1px solid white;
+	border-radius: 20px;
+	overflow: hidden; /*jo cheezain box xy bahir jain gain un ko hide kr day ga */
+	box-shadow: 0px 10px 25px -8px #000; /* box ky neachy shadow ky liya  */
+/*	background-image: url('Blackadam.jpg');*/
+	background: url('img/money_heist1.jpg') no-repeat center center/cover ;
+/*	background: url('img/Blackadam.jpg')*/
+/*	background-image: url('Blackadam.jpg');*/
+	opacity: .6;
+
+
+}
+header::before{
+	contain: 'hello';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+/*	background: url('img/money_heist1.jpg') no-repeat center center/cover ; not work */
+
+}
+
+header video{
+	position: absolute;
+	width:  115%;
+	height: 183%;
+	top: -48%;
+	z-index: -1;/* not work */
+}
+
+header nav{
+
+	width: 100%;
+	height: 10%;
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px ;
+
+}
+
+header nav .logo_ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header nav .logo_ul img{
+	width:  90px;
+
+}
+header nav .logo_ul ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+header nav .logo_ul ul li {
+	padding: 3px 15px;
+
+}
+
+header nav .logo_ul ul li a{
+	text-decoration: none; /* it removed the link line */
+	color: white;
+	font-size: 15px;
+	font-weight: bold;/* it does not make bold text */
+}
+header nav .logo_ul ul li a:hover{
+	color: rgb(255, 255, 255, .7);
+	color: goldenrod;
+}
+header nav .search_user{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header nav .search_user input{
+	padding: 3px 10px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	background: rgb(255, 255, 255, .3);
+	color: #fff;/* jo be hm write karin gain serch bar main vo whitw ho ga */
+	margin: 15px; 
+} 
+header nav .search_user input::placeholder{
+	color: white;
+	font-weight: bold;
+}
+header nav .search_user img{
+	width: 25px;
+	height: 25px;
+	border-radius: 40%;
+
+}
+header nav .search_user .search {
+	position: absolute;
+	width: 320px;
+	height: 290px;
+	border: 1px solid blue;
+	right: 0;
+	top: 40px;
+}
+
